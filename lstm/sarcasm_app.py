@@ -12,7 +12,7 @@ from tensorflow.keras.preprocessing.sequence import pad_sequences
 #keras_model_path = "/content/drive/My Drive/keras_model.h5"
 #loaded_model = tf.keras.models.load_model(keras_model_path)
 
-loaded_model=torch.load("lstm/model.pt")
+loaded_model=torch.load("Sarcasm-Detection-Tensorflow/lstm/model.pt")
 
 # Load data
 df1 = pd.read_json('Sarcasm-Detection-Tensorflow/Dataset/Sarcasm_Headlines_Dataset.json', lines=True)

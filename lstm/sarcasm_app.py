@@ -5,8 +5,8 @@ import numpy as np
 import torch
 import tensorflow as tf
 import keras
-from tf.keras.preprocessing.text import Tokenizer
-from tf.keras.preprocessing.sequence import pad_sequences
+from tensorflow.keras.preprocessing.text import Tokenizer
+from tensorflow.keras.preprocessing.sequence import pad_sequences
 
 # Load the saved Keras model
 #keras_model_path = "/content/drive/My Drive/keras_model.h5"

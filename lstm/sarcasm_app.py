@@ -8,13 +8,14 @@ from keras.preprocessing.text import Tokenizer
 from keras.preprocessing.sequence import pad_sequences
 
 # Load the saved Keras model
-keras_model_path = "/content/drive/My Drive/keras_model.h5"
+#keras_model_path = "/content/drive/My Drive/keras_model.h5"
 #loaded_model = tf.keras.models.load_model(keras_model_path)
-loaded_model=torch.load("/content/model.pt")
+
+loaded_model=torch.load("lstm/model.pt")
 
 # Load data
-df1 = pd.read_json('/content/Sarcasm-Detection-Tensorflow/Dataset/Sarcasm_Headlines_Dataset.json', lines=True)
-df2 = pd.read_json('/content/Sarcasm-Detection-Tensorflow/Dataset/Sarcasm_Headlines_Dataset_v2.json', lines=True)
+df1 = pd.read_json('Sarcasm-Detection-Tensorflow/Dataset/Sarcasm_Headlines_Dataset.json', lines=True)
+df2 = pd.read_json('Sarcasm-Detection-Tensorflow/Dataset/Sarcasm_Headlines_Dataset_v2.json', lines=True)
 frames = [df1, df2]
 df = pd.concat(frames)
 

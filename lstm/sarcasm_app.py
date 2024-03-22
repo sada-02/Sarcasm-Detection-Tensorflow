@@ -1,4 +1,4 @@
-import pickle
+import joblib
 import streamlit as st
 import pandas as pd
 import numpy as np
@@ -11,8 +11,7 @@ from tensorflow.keras.preprocessing.sequence import pad_sequences
 # Load the saved Keras model
 model_path = "lstm/model.pkl"
 
-with open(model_path , "rb" ) as f :
-    loaded_model = pickle.load(f)
+loaded_model = joblib.load('model.joblib')
 
 #loaded_model=torch.load("Sarcasm-Detection-Tensorflow/lstm/model.pt")
 

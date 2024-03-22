@@ -2,5 +2,5 @@ torch
 streamlit
 pandas
 numpy
-tensorflow
-keras>=2.13
+tensorflow>=2.9
+keras>=2.9

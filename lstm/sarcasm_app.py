@@ -1,4 +1,4 @@
-
+import pickle
 import streamlit as st
 import pandas as pd
 import numpy as np
@@ -9,8 +9,10 @@ from tensorflow.keras.preprocessing.text import Tokenizer
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 
 # Load the saved Keras model
-keras_model_path = "lstm/model.h5"
-loaded_model = tf.keras.models.load_model(keras_model_path)
+model_path = "lstm/model.pkl"
+
+with open(model_path , "rb" ) as f :
+    loaded_model = pickle.load(f)
 
 #loaded_model=torch.load("Sarcasm-Detection-Tensorflow/lstm/model.pt")
 

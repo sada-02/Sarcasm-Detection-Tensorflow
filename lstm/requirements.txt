@@ -3,4 +3,4 @@ streamlit
 pandas
 numpy
 tensorflow
-keras
+keras>=2.13
